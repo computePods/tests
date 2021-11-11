@@ -1,0 +1,6 @@
+natsServer:
+  host: natsServer
+  port: 2224
+
+pluginsDirs:
+  - cpchef/plugins/context

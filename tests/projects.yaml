@@ -1,0 +1,11 @@
+
+testName: projectsTest
+
+help: get a list of projects
+
+request:
+  method: GET
+  url: /projects
+
+expected:
+  cLogic: ~/GitTools/computePods/tests/testsdata

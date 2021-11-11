@@ -1,0 +1,12 @@
+natsServer:
+  host: pi01
+  port: 2224
+
+webServer:
+  sockets:
+    - host: 127.0.0.1
+      port: 8081
+    - path: ~/.local/cpmd/testsServer.socket
+
+projectDirs:
+  - testsData

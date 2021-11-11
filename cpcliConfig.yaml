@@ -1,0 +1,8 @@
+natsServer:
+ host: natsServer
+ port: 2224
+
+commandsDirs:
+  - tests
+
+socketPath: /home/stg/.local/cpmd/testsServer.socket

@@ -1,0 +1,3 @@
+natsServer:
+  port: "2224"
+  host: natsServer

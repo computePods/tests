@@ -1,0 +1,25 @@
+tasks:
+  majorDomo:
+    projectDir: ~/GitTools/computePods/tests/data/majorDomo
+    runOnce: true
+    cmd:
+      - cpmd
+      - -v
+
+#  chefContext:
+#    projectDir: ~/GitTools/computePods/tests/data/chefs/context
+#    watch:
+#      - plugins
+#    cmd:
+#      - cpchef
+#      - -v
+
+  tests:
+    projectDir: ~/GitTools/computePods/tests
+    watch:
+      - tests
+      - testsData
+    cmd:
+      - cpcli
+      - -v
+      - -t

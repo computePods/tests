@@ -1,0 +1,28 @@
+# This is a YAML description of the ConTeXt project which explores
+# compuational logic.
+
+projects:
+  cLogic:
+
+    description: |
+      This ConTeXt project has two primary goals:
+      \n
+      1. Document the design of the JoyLoL engine
+      2. Build an executable JoyLoL engine
+
+    targets:
+      document:
+        help: Typeset the Computational Logic document (pdf version)
+
+        dependencies:
+          - cLogic.tex
+        outputs:
+          - cLogic.pdf
+
+      html:
+        help: Typeset the Computational Logic document (html version)
+
+        dependencies:
+          - cLogic.tex
+        outputs:
+          - cLogic.html
