@@ -8,9 +8,11 @@ async def buildADocument(config, nc) :
   # send NATS message directly to context-chef to build a document
   print("Sending build message...")
   await nc.sendMessage("build.from.cLogic", {
-    'name' : "cLogic",
-    'path' : "~/GitTools/computePods/tests/data/majorDomo/cLogic/doc",
-    'doc'  : 'cLogic.tex'
+    'userName' : 'stg',
+    'podName'  : 'nn01',
+    'name'     : "cLogic",
+    'path'     : "~/GitTools/computePods/tests/data/majorDomo/cLogic/doc",
+    'doc'      : 'cLogic.tex'
   })
 
   # listen for "done" reply
